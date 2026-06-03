@@ -64,23 +64,31 @@ export default function Hero() {
           </p>
 
           <h1
-            className="
-              luxury-heading
-              text-3xl
-              sm:text-4xl
-              md:text-6xl
-              lg:text-8xl
-              font-light
-              leading-[1.1]
-              text-white
-            "
-            style={{
-              textShadow: "0 4px 30px rgba(0,0,0,0.8)",
-            }}
-          >
-            For Those Who Give Us Everything
-            <br className="hidden md:block" />
-            Deserves Extraordinary Nutrition
+   className="
+    luxury-heading
+    text-3xl
+    sm:text-4xl
+    md:text-6xl
+    lg:text-8xl
+    font-light
+    leading-[1.15]
+    text-white
+  "
+  style={{
+    textShadow: "0 4px 30px rgba(0,0,0,0.8)",
+  }}
+>
+  <span className="block md:inline">
+    For Those Who Give Us
+  </span>
+
+  <span className="block md:inline md:ml-3">
+    Everything
+  </span>
+
+  <span className="block md:block">
+    Deserves Extraordinary Nutrition
+  </span>
           </h1>
 
           <p
