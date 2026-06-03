@@ -44,7 +44,7 @@ export default function CollectionIntro() {
   The Collection
         </p>
 
-        <h2 className="text-5xl md:text-7xl font-light tracking-[0.12em] uppercase text-white mb-10">
+        <h2 className="luxury-heading text-6xl md:text-8xl font-light text-white mb-10">
           Crafted With
           <br />
           Purpose

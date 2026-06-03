@@ -55,9 +55,10 @@ export default function Hero() {
 
           <h1
             className="
-              text-4xl
-              md:text-6xl
-              lg:text-7xl
+             luxury-heading
+              text-5xl
+              md:text-7xl
+              lg:text-8xl
               font-light
               leading-tight
               text-white
@@ -66,7 +67,7 @@ export default function Hero() {
               textShadow: "0 4px 30px rgba(0,0,0,0.8)",
             }}
           >
-            A Lifetime Of Companionship
+            For Those Who Give Us Everything
             <br />
             Deserves Extraordinary Nutrition
           </h1>

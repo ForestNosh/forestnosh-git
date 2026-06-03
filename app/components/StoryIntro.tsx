@@ -9,7 +9,7 @@ export default function StoryIntro() {
         </p>
 
         {/* Headline */}
-        <h2 className="text-4xl md:text-6xl font-extralight tracking-[0.15em] uppercase mb-10">
+        <h2 className="luxury-heading text-5xl md:text-7xl font-light mb-10">
           Born From
           <br />
           A Simple Belief

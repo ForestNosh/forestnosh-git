@@ -9,7 +9,7 @@ export default function Footer() {
             Our Philosophy
           </p>
 
-          <h2 className="text-4xl md:text-6xl font-light tracking-[0.2em] uppercase text-white mb-8">
+          <h2 className="luxury-heading text-5xl md:text-7xl font-light text-white mb-8">
             Nourishment Inspired
             <br />
             By Nature

@@ -5,8 +5,7 @@ import { Cormorant_Garamond } from "next/font/google";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["300", "400"],
-  style: ["italic"],
+  weight: ["300", "400", "500"],
 });
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,9 +16,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
-
-
 
 export const metadata: Metadata = {
   title: "Forest Nosh",
@@ -34,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable}`}
+        className={`${geistSans.variable} ${geistMono.variable} ${cormorant.className}`}
       >
         {children}
       </body>
