@@ -5,9 +5,7 @@ export default function Footer() {
 
         {/* Philosophy */}
         <div className="text-center mb-24">
-          <p className="text-white/30 uppercase tracking-[0.4em] text-xs mb-6">
-            Our Philosophy
-          </p>
+          
 
           <h2 className="luxury-heading text-5xl md:text-7xl font-light text-white mb-8">
             Nourishment Inspired
