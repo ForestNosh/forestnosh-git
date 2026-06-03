@@ -47,20 +47,31 @@ export default function Hero() {
 
       {/* Hero Content */}
       <div className="absolute inset-0 z-10">
-        <div className="absolute left-8 md:left-20 bottom-16 md:bottom-20 max-w-4xl">
-
-          <p className="text-white/80 uppercase tracking-[0.3em] text-sm mb-6">
+        <div
+          className="
+            absolute
+            left-5
+            right-5
+            bottom-28
+            md:left-20
+            md:right-auto
+            md:bottom-20
+            max-w-4xl
+          "
+        >
+          <p className="text-white/80 uppercase tracking-[0.3em] text-xs md:text-sm mb-4 md:mb-6">
             Our Philosophy
           </p>
 
           <h1
             className="
-             luxury-heading
-              text-5xl
-              md:text-7xl
+              luxury-heading
+              text-3xl
+              sm:text-4xl
+              md:text-6xl
               lg:text-8xl
               font-light
-              leading-tight
+              leading-[1.1]
               text-white
             "
             style={{
@@ -68,14 +79,15 @@ export default function Hero() {
             }}
           >
             For Those Who Give Us Everything
-            <br />
+            <br className="hidden md:block" />
             Deserves Extraordinary Nutrition
           </h1>
 
           <p
             className="
-              mt-8
-              text-lg
+              mt-6
+              md:mt-8
+              text-base
               md:text-xl
               text-white/80
               max-w-2xl
@@ -89,18 +101,18 @@ export default function Hero() {
             humans and dogs through nutrition inspired by
             nature and refined by science.
           </p>
-
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center">
-
+      <div className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center">
         <button
           onClick={scrollToNextSection}
           className="
-            w-20
-            h-20
+            w-14
+            h-14
+            md:w-20
+            md:h-20
             rounded-full
             border
             border-white/40
@@ -114,15 +126,14 @@ export default function Hero() {
             cursor-pointer
           "
         >
-          <span className="text-white text-3xl animate-bounce">
+          <span className="text-white text-2xl md:text-3xl animate-bounce">
             ↓
           </span>
         </button>
 
-        <p className="mt-4 text-white/70 text-xs tracking-[0.3em] uppercase">
+        <p className="mt-3 md:mt-4 text-white/70 text-[10px] md:text-xs tracking-[0.3em] uppercase">
           Scroll To Continue
         </p>
-
       </div>
     </section>
   );
