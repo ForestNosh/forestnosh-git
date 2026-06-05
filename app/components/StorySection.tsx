@@ -61,24 +61,7 @@ export default function StorySection({
       }
     );
 
-    gsap.fromTo(
-      section.querySelector(".story-side"),
-      {
-        opacity: 0,
-        x: 40,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 1.2,
-        delay: 0.8,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: section,
-          start: "top 75%",
-        },
-      }
-    );
+
   }, []);
 
   return (

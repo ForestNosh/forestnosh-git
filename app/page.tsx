@@ -11,7 +11,7 @@ export default function Home() {
       {/* Mobile Background */}
       <div className="absolute inset-0 md:hidden">
         <Image
-          src="/images/dogeye2MOBILE.jpg"
+          src="/images/dogeye2mobile.jpeg"
           alt="Dog Eyes"
           fill
           priority
@@ -22,7 +22,7 @@ export default function Home() {
       {/* Desktop Background */}
       <div className="absolute inset-0 hidden md:block">
         <Image
-          src="/images/dogeye2DESKTOP.jpg"
+          src="/images/dogeye2.jpeg"
           alt="Dog Eyes"
           fill
           priority
