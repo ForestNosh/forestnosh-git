@@ -44,7 +44,7 @@ export default function PremiumLoader() {
         className="flex flex-col items-center text-center"
       >
         <Image
-          src="/images/Final_Logo_28May2026.png"
+          src="/images/ForestNosh_Logo-TM_5June2026.png"
           alt="Forest Nosh"
           width={550}
           height={550}

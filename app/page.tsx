@@ -41,7 +41,7 @@ export default function Home() {
         transition={{ duration: 1.5 }}
       >
         <Image
-          src="/images/Final_Logo_28May2026.png"
+          src="/images/ForestNosh_Logo-TM_5June2026.png"
           alt="Forest Nosh"
           width={500}
           height={400}
