@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const mobileImages = [
-  "/images/D01mobile.jpeg",
-  "/images/DO18mobile.jpeg",
+  "/images/dog21.jpeg",
   "/images/D09mobile.jpeg",
+  "/images/DO7.jpeg",
+  "/images/n2.jpeg",
 ];
 
 export default function HeroMobile() {

@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const dogImages = [
   "/images/DO18.jpeg",
-  "/images/DO19.jpeg",
-  "/images/DO17.jpeg",
-  "/images/DO14.jpeg",
+  "/images/DO13.jpeg",
+  "/images/dog1.jpeg",
+  "/images/n5.jpeg",
 ];
 
 export default function HeroDesktop() {
