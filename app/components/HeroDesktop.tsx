@@ -11,7 +11,7 @@ const dogImages = [
   "/images/n5.jpeg",
 ];
 
-const SLIDE_DURATION = 6000;
+const SLIDE_DURATION = 7000;
 
 export default function HeroDesktop() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -87,7 +87,7 @@ export default function HeroDesktop() {
               sequence={[
                 "At Forest Nosh, we celebrate the bond between humans and dogs through nutrition inspired by nature and refined by science.",
               ]}
-              speed={60}
+              speed={150}
               cursor={true}
               repeat={0}
             />

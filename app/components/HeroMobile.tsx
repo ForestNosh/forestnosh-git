@@ -63,7 +63,7 @@ export default function HeroMobile() {
           <TypeAnimation
             key={typingKey}
             sequence={[text]}
-            speed={70}
+            speed={55}
             cursor={true}
             repeat={0}
           />
