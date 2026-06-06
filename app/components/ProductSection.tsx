@@ -59,7 +59,7 @@ export default function ProductSection() {
 
         <div className="relative">
           <img
-            src="/images/Final_Logo_28May2026.png"
+            src="/images/ForestNosh_Logo-TM_5June2026.png"
             alt="Forest Nosh"
             className="mx-auto max-h-[500px] object-contain"
           />

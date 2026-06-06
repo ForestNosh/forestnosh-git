@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const mobileImages = [
-  "/images/dog21.jpeg",
-  "/images/D09mobile.jpeg",
+  "/images/D01mobile.jpeg",
+  "/images/manwalkingdog.jpg",
   "/images/martha1.jpeg",
-  "/images/n2.jpeg",
+  "/images/n5.jpeg",
 ];
 
 export default function HeroMobile() {
@@ -49,9 +49,9 @@ export default function HeroMobile() {
             textShadow: "0 4px 20px rgba(0,0,0,0.8)",
           }}
         >
-          Extraordinary Nutrition
+          For Those Who Give Us Everything
           <br />
-          For Extraordinary Dogs
+          Deserve Extraordinary Nutrition
         </h1>
 
         <p
@@ -60,7 +60,9 @@ export default function HeroMobile() {
             textShadow: "0 2px 10px rgba(0,0,0,0.8)",
           }}
         >
-          Nature-inspired nutrition refined by science.
+          At Forest Nosh, we celebrate the bond between
+            humans and dogs through nutrition inspired by
+            nature and refined by science..
         </p>
 
       </div>
