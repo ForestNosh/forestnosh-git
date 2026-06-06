@@ -11,6 +11,8 @@ const dogImages = [
   "/images/n5.jpeg",
 ];
 
+const SLIDE_DURATION = 6000;
+
 export default function HeroDesktop() {
   const [currentImage, setCurrentImage] = useState(0);
   const [typingKey, setTypingKey] = useState(0);
@@ -22,7 +24,7 @@ export default function HeroDesktop() {
       );
 
       setTypingKey((prev) => prev + 1);
-    }, 4000);
+    }, SLIDE_DURATION);
 
     return () => clearInterval(interval);
   }, []);
@@ -45,7 +47,6 @@ export default function HeroDesktop() {
       {/* Content */}
       <div className="absolute inset-0 flex items-center">
         <div className="ml-24 max-w-5xl z-10">
-
           <p className="text-white/70 uppercase tracking-[0.4em] text-sm mb-6">
             Our Philosophy
           </p>
@@ -86,12 +87,11 @@ export default function HeroDesktop() {
               sequence={[
                 "At Forest Nosh, we celebrate the bond between humans and dogs through nutrition inspired by nature and refined by science.",
               ]}
-              speed={70}
+              speed={60}
               cursor={true}
               repeat={0}
             />
           </div>
-
         </div>
       </div>
     </section>
