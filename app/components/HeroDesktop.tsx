@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 const dogImages = [
   "/images/dog1.jpeg",
@@ -12,12 +13,15 @@ const dogImages = [
 
 export default function HeroDesktop() {
   const [currentImage, setCurrentImage] = useState(0);
+  const [typingKey, setTypingKey] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) =>
         prev === dogImages.length - 1 ? 0 : prev + 1
       );
+
+      setTypingKey((prev) => prev + 1);
     }, 4000);
 
     return () => clearInterval(interval);
@@ -64,22 +68,29 @@ export default function HeroDesktop() {
             Deserve Extraordinary Nutrition
           </h1>
 
-          <p
+          <div
             className="
               mt-8
               text-xl
               text-white/80
               max-w-3xl
               leading-relaxed
+              min-h-[80px]
             "
             style={{
               textShadow: "0 2px 15px rgba(0,0,0,0.8)",
             }}
           >
-            At Forest Nosh, we celebrate the bond between
-            humans and dogs through nutrition inspired by
-            nature and refined by science.
-          </p>
+            <TypeAnimation
+              key={typingKey}
+              sequence={[
+                "At Forest Nosh, we celebrate the bond between humans and dogs through nutrition inspired by nature and refined by science.",
+              ]}
+              speed={70}
+              cursor={true}
+              repeat={0}
+            />
+          </div>
 
         </div>
       </div>
