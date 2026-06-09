@@ -1,60 +1,63 @@
+import Link from "next/link";
+
 export default function ProductSection() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center max-w-6xl mx-auto -mt-30">
 
-      {/* Future Product */}
+      {/* Bones & Joint Support */}
       <div className="text-center transition-all duration-500">
-
-        <div
-          className="
-            border
-            border-white/15
-            rounded-[32px]
-            p-10
-            bg-white/10
-            backdrop-blur-md
-            shadow-[0_0_40px_rgba(255,255,255,0.03)]
-            hover:bg-white/15
-            hover:border-white/30
-            hover:shadow-[0_0_60px_rgba(255,255,255,0.08)]
-            transition-all
-            duration-500
-          "
-        >
+        <Link href="/products/bones-joint-support">
 
           <div
             className="
-              w-24
-              h-24
-              mx-auto
-              mb-8
-              rounded-full
               border
-              border-white/20
-              bg-white/5
-              flex
-              items-center
-              justify-center
+              border-white/15
+              rounded-[32px]
+              p-10
+              bg-white/10
+              backdrop-blur-md
+              shadow-[0_0_40px_rgba(255,255,255,0.03)]
+              hover:bg-white/15
+              hover:border-white/30
+              hover:shadow-[0_0_60px_rgba(255,255,255,0.08)]
+              transition-all
+              duration-500
+              cursor-pointer
             "
           >
-            <span className="text-5xl text-white/50 font-thin">
-              +
-            </span>
+
+            <div
+              className="
+                w-24
+                h-24
+                mx-auto
+                mb-8
+                rounded-full
+                border
+                border-white/20
+                bg-white/5
+                flex
+                items-center
+                justify-center
+              "
+            >
+              <span className="text-4xl">🦴</span>
+            </div>
+
+            <h3 className="text-lg tracking-[0.15em] uppercase text-white/90 mb-3">
+              Bones & Joint Support
+            </h3>
+
+            <p className="text-xs tracking-[0.2em] uppercase text-white/60">
+              View Product →
+            </p>
+
           </div>
 
-          <h3 className="text-lg tracking-[0.25em] uppercase text-white/90 mb-3">
-            Coming Soon
-          </h3>
-
-          <p className="text-xs tracking-[0.35em] uppercase text-white/60">
-            Product
-          </p>
-
-        </div>
-
+        </Link>
       </div>
 
-      {/* Main Product */}
+      {/* Center Logo */}
       <div className="text-center scale-110 md:scale-125 relative z-10">
 
         <div className="relative">
@@ -71,56 +74,57 @@ export default function ProductSection() {
 
       </div>
 
-      {/* Future Product */}
+      {/* Female Dog Wellness */}
       <div className="text-center transition-all duration-500">
-
-        <div
-          className="
-            border
-            border-white/15
-            rounded-[32px]
-            p-10
-            bg-white/10
-            backdrop-blur-md
-            shadow-[0_0_40px_rgba(255,255,255,0.03)]
-            hover:bg-white/15
-            hover:border-white/30
-            hover:shadow-[0_0_60px_rgba(255,255,255,0.08)]
-            transition-all
-            duration-500
-          "
-        >
+        <Link href="/products/female-dog-wellness">
 
           <div
             className="
-              w-24
-              h-24
-              mx-auto
-              mb-8
-              rounded-full
               border
-              border-white/20
-              bg-white/5
-              flex
-              items-center
-              justify-center
+              border-white/15
+              rounded-[32px]
+              p-10
+              bg-white/10
+              backdrop-blur-md
+              shadow-[0_0_40px_rgba(255,255,255,0.03)]
+              hover:bg-white/15
+              hover:border-white/30
+              hover:shadow-[0_0_60px_rgba(255,255,255,0.08)]
+              transition-all
+              duration-500
+              cursor-pointer
             "
           >
-            <span className="text-5xl text-white/50 font-thin">
-              +
-            </span>
+
+            <div
+              className="
+                w-24
+                h-24
+                mx-auto
+                mb-8
+                rounded-full
+                border
+                border-white/20
+                bg-white/5
+                flex
+                items-center
+                justify-center
+              "
+            >
+              <span className="text-4xl">🌸</span>
+            </div>
+
+            <h3 className="text-lg tracking-[0.15em] uppercase text-white/90 mb-3">
+              Female Dog Wellness
+            </h3>
+
+            <p className="text-xs tracking-[0.2em] uppercase text-white/60">
+              View Product →
+            </p>
+
           </div>
 
-          <h3 className="text-lg tracking-[0.25em] uppercase text-white/90 mb-3">
-            Coming Soon
-          </h3>
-
-          <p className="text-xs tracking-[0.35em] uppercase text-white/60">
-            Product
-          </p>
-
-        </div>
-
+        </Link>
       </div>
 
     </div>
