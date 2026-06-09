@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ProductSection() {
   return (
 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center max-w-6xl mx-auto -mt-29">
-  
+
       {/* Bones & Joint Support */}
       <div className="text-center transition-all duration-500">
         <Link href="/products/bones-joint-support">
@@ -119,7 +119,7 @@ export default function ProductSection() {
             </h3>
 
             <p className="text-xs tracking-[0.2em] uppercase text-white/60">
-              View Product →
+              COMING SOON →
             </p>
 
           </div>
