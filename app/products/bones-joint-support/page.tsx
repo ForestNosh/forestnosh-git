@@ -17,6 +17,7 @@ return ( <main className="max-w-5xl mx-auto px-6 py-12">
       Forest Nosh Bones & Joint Support Soft Chews
     </h1>
 
+
     <p className="text-xl text-gray-600 mb-6">
       Natural Mobility Support for Active Dogs
     </p>
