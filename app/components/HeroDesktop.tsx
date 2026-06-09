@@ -87,7 +87,7 @@ export default function HeroDesktop() {
               sequence={[
                 "At Forest Nosh, we celebrate the bond between humans and dogs through nutrition inspired by nature and refined by science.",
               ]}
-              speed={150}
+              speed={fast}
               cursor={true}
               repeat={0}
             />
