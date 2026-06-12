@@ -12,29 +12,29 @@ export default function PremiumLoader() {
     const tl = gsap.timeline();
 
     tl.fromTo(
-      logoRef.current,
-      {
-        opacity: 0,
-        y: 30,
-        scale: 0.95,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        duration: 1.5,
-        ease: "power3.out",
-      }
-    )
-      .to({}, { duration: 1.2 })
-      .to(loaderRef.current, {
-        yPercent: -100,
-        duration: 1.5,
-        ease: "power4.inOut",
-      });
-  }, []);
+  logoRef.current,
+  {
+    opacity: 0,
+    scale: 0.8,
+    filter: "blur(8px)",
+  },
+  {
+    opacity: 1,
+    scale: 1,
+    filter: "blur(0px)",
+    duration: 1.5,
+    ease: "power2.out",
+  }
+)
+.to({}, { duration: 1.0 })
+.to(loaderRef.current, {
+  yPercent: -100,
+  duration: 0.2,
+    ease: "power3.inOut",
+});
+}, []); 
 
-  return (
+return (
     <div
       ref={loaderRef}
       className="fixed inset-0 z-[99999] bg-black flex items-center justify-center"
