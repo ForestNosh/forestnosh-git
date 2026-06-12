@@ -6,43 +6,38 @@ import Image from "next/image";
 
 export default function PremiumLoader() {
   const loaderRef = useRef<HTMLDivElement>(null);
-  const logoRef = useRef<HTMLDivElement>(null);
+  const taglineRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
     const tl = gsap.timeline();
 
     tl.fromTo(
-  logoRef.current,
-  {
-    opacity: 0,
-    scale: 0.8,
-    filter: "blur(8px)",
-  },
-  {
-    opacity: 1,
-    scale: 1,
-    filter: "blur(0px)",
-    duration: 1.5,
-    ease: "power2.out",
-  }
-)
-.to({}, { duration: 1.0 })
-.to(loaderRef.current, {
-  yPercent: -100,
-  duration: 0.2,
-    ease: "power3.inOut",
-});
-}, []); 
+      taglineRef.current,
+      {
+        opacity: 0,
+        y: 40,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.8,
+        ease: "power2.out",
+      }
+    )
+      .to({}, { duration: 1.0 })
+      .to(loaderRef.current, {
+        yPercent: -100,
+        duration: 0.6,
+        ease: "power3.inOut",
+      });
+  }, []);
 
-return (
+  return (
     <div
       ref={loaderRef}
       className="fixed inset-0 z-[99999] bg-black flex items-center justify-center"
     >
-      <div
-        ref={logoRef}
-        className="flex flex-col items-center text-center"
-      >
+      <div className="flex flex-col items-center text-center">
         <Image
           src="/images/ForestNosh_Logo-TM_5June2026.png"
           alt="Forest Nosh"
@@ -53,13 +48,15 @@ return (
         />
 
         <p
+          ref={taglineRef}
           className="
             mt-8
-            text-white/70
+            text-white
             uppercase
-            tracking-[0.4em]
-            text-xs
-            md:text-sm
+            tracking-[0.25em]
+            text-sm
+            md:text-lg
+            font-extrabold
           "
         >
           Premium Nutrition For Dogs
