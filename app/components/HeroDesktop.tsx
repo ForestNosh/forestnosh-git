@@ -16,6 +16,15 @@ const SLIDE_DURATION = 7000;
 export default function HeroDesktop() {
   const [currentImage, setCurrentImage] = useState(0);
   const [typingKey, setTypingKey] = useState(0);
+  const [showTyping, setShowTyping] = useState(false);
+
+  useEffect(() => {
+    const typingTimer = setTimeout(() => {
+      setShowTyping(true);
+    }, 1200);
+
+    return () => clearTimeout(typingTimer);
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -23,7 +32,12 @@ export default function HeroDesktop() {
         prev === dogImages.length - 1 ? 0 : prev + 1
       );
 
-      setTypingKey((prev) => prev + 1);
+      setShowTyping(false);
+
+      setTimeout(() => {
+        setTypingKey((prev) => prev + 1);
+        setShowTyping(true);
+      }, 500);
     }, SLIDE_DURATION);
 
     return () => clearInterval(interval);
@@ -82,15 +96,17 @@ export default function HeroDesktop() {
               textShadow: "0 2px 15px rgba(0,0,0,0.8)",
             }}
           >
-            <TypeAnimation
-              key={typingKey}
-              sequence={[
-                "At Forest Nosh, we celebrate the bond between humans and dogs through nutrition inspired by nature and refined by science.",
-              ]}
-              speed={50}
-              cursor={true}
-              repeat={0}
-            />
+            {showTyping && (
+              <TypeAnimation
+                key={typingKey}
+                sequence={[
+                  "At Forest Nosh, we celebrate the bond between humans and dogs through nutrition inspired by nature and refined by science.",
+                ]}
+                speed={50}
+                cursor={true}
+                repeat={0}
+              />
+            )}
           </div>
         </div>
       </div>
