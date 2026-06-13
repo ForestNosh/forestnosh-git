@@ -4,40 +4,50 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
-const dogImages = [
-  "/images/dog1.jpeg",
-  "/images/catstevens.jpeg",
-  "/images/DO18.jpeg",
-  "/images/n5.jpeg",
+const slides = [
+  {
+    image: "/images/dog1.jpeg",
+    title1: "For Those Who Give Us Everything",
+    title2: "Deserve Extraordinary Nutrition",
+    description:
+      "At Forest Nosh, we celebrate the bond between humans and dogs through nutrition inspired by nature and refined by science.",
+  },
+  {
+    image: "/images/catstevens.jpeg",
+    title1: "Para Quienes Nos Lo Dan Todo",
+    title2: "Merecen una Nutrición Extraordinaria",
+    description:
+      "En Forest Nosh, celebramos el vínculo entre las personas y sus perros a través de una nutrición inspirada en la naturaleza y perfeccionada por la ciencia.",
+  },
+  {
+    image: "/images/n5.jpeg",
+    title1: "우리에게 모든 것을 내어주는 존재를 위해",
+    title2: "특별한 영양을 선사합니다",
+    description:
+      "Forest Nosh는 자연에서 영감을 얻고 과학으로 정교하게 완성한 영양을 통해 사람과 반려견 사이의 유대를 기념합니다.",
+  },
+  {
+    image: "/images/DO18.jpeg",
+    title1: "Für diejenigen, die uns alles geben",
+    title2: "verdienen außergewöhnliche Ernährung",
+    description:
+      "Bei Forest Nosh feiern wir die besondere Bindung zwischen Mensch und Hund durch Ernährung, die von der Natur inspiriert und durch die Wissenschaft verfeinert wird.",
+  },
 ];
 
-const SLIDE_DURATION = 7000;
+const SLIDE_DURATION = 9000;
 
 export default function HeroDesktop() {
-  const [currentImage, setCurrentImage] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const [typingKey, setTypingKey] = useState(0);
-  const [showTyping, setShowTyping] = useState(false);
-
-  useEffect(() => {
-    const typingTimer = setTimeout(() => {
-      setShowTyping(true);
-    }, 1200);
-
-    return () => clearTimeout(typingTimer);
-  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImage((prev) =>
-        prev === dogImages.length - 1 ? 0 : prev + 1
+      setCurrentSlide((prev) =>
+        prev === slides.length - 1 ? 0 : prev + 1
       );
 
-      setShowTyping(false);
-
-      setTimeout(() => {
-        setTypingKey((prev) => prev + 1);
-        setShowTyping(true);
-      }, 500);
+      setTypingKey((prev) => prev + 1);
     }, SLIDE_DURATION);
 
     return () => clearInterval(interval);
@@ -47,7 +57,7 @@ export default function HeroDesktop() {
     <section className="relative h-screen overflow-hidden">
       {/* Background Image */}
       <Image
-        src={dogImages[currentImage]}
+        src={slides[currentSlide].image}
         alt="Forest Nosh"
         fill
         priority
@@ -55,7 +65,7 @@ export default function HeroDesktop() {
         className="object-cover object-center"
       />
 
-      {/* Dark Overlay */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/50" />
 
       {/* Content */}
@@ -78,9 +88,9 @@ export default function HeroDesktop() {
               textShadow: "0 4px 30px rgba(0,0,0,0.8)",
             }}
           >
-            For Those Who Give Us Everything
+            {slides[currentSlide].title1}
             <br />
-            Deserve Extraordinary Nutrition
+            {slides[currentSlide].title2}
           </h1>
 
           <div
@@ -90,23 +100,19 @@ export default function HeroDesktop() {
               text-white/80
               max-w-3xl
               leading-relaxed
-              min-h-[80px]
+              min-h-[90px]
             "
             style={{
               textShadow: "0 2px 15px rgba(0,0,0,0.8)",
             }}
           >
-            {showTyping && (
-              <TypeAnimation
-                key={typingKey}
-                sequence={[
-                  "At Forest Nosh, we celebrate the bond between humans and dogs through nutrition inspired by nature and refined by science.",
-                ]}
-                speed={50}
-                cursor={true}
-                repeat={0}
-              />
-            )}
+            <TypeAnimation
+              key={typingKey}
+              sequence={[slides[currentSlide].description]}
+              speed={40}
+              cursor={true}
+              repeat={0}
+            />
           </div>
         </div>
       </div>
