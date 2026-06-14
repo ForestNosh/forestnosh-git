@@ -49,7 +49,7 @@ export default function ProductSection() {
             </h3>
 
             <p className="text-xs tracking-[0.2em] uppercase text-white/60">
-              View Product →
+              COMING SOON →
             </p>
 
           </div>
