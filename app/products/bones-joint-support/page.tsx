@@ -97,14 +97,8 @@ export default function BonesJointSupportPage() {
             </span>
           </div>
 
-          <div className="orn-div" />
-
-          <div className="orn-stat">
-            <span className="orn-num">0</span>
-            <span className="orn-label">
-              Synthetics
-            </span>
-          </div>
+          
+          
         </div>
       </section>
 
@@ -353,6 +347,85 @@ export default function BonesJointSupportPage() {
   </div>
 
   {/* AYURVEDIC DIFFERENCE */}
+  {/* OUR PROMISE */}
+
+<div className="section-eyebrow">
+  <div className="eyebrow-line" />
+  <span className="eyebrow-text">
+    Our Promise
+  </span>
+  <div className="eyebrow-line" />
+</div>
+
+<div className="provenance-bar">
+  <div className="prov-card">
+    <div className="prov-icon">✓</div>
+
+    <p className="prov-title">
+      No Fillers, Ever
+    </p>
+
+    <p className="prov-sub">
+      Every ingredient has a functional role.
+      No wheat, maize, artificial colours,
+      or synthetic preservatives.
+    </p>
+  </div>
+
+  <div className="prov-card">
+    <div className="prov-icon">♥</div>
+
+    <p className="prov-title">
+      Formulated For Longevity
+    </p>
+
+    <p className="prov-sub">
+      Designed for dogs 3 years and above.
+      Daily use supports joint health before
+      symptoms appear.
+    </p>
+  </div>
+
+  <div className="prov-card">
+    <div className="prov-icon">🔬</div>
+
+    <p className="prov-title">
+      Science-Backed Herbs
+    </p>
+
+    <p className="prov-sub">
+      Hadjod and Shallaki dosages aligned
+      with veterinary research, not
+      tradition alone.
+    </p>
+  </div>
+</div>
+
+{/* CTA */}
+
+<div className="cta-section">
+  <div>
+    <p className="cta-left-title">
+      Ready to learn more?
+    </p>
+
+    <p className="cta-left-sub">
+      Ask about feeding guides, breed
+      suitability, or the science behind
+      the herbs.
+    </p>
+  </div>
+
+  <div className="cta-buttons">
+    <button className="btn-gold">
+      Feeding Guide →
+    </button>
+
+    <button className="btn-ghost">
+      Herb Science →
+    </button>
+  </div>
+</div>
 
   <div className="ayurveda-panel">
     <div className="ay-left">
