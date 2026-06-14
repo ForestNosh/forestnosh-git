@@ -1,8 +1,25 @@
+import Link from "next/link";
 import "./bones-joint-support.css";
-
 export default function BonesJointSupportPage() {
   return (
     <main className="product-page">
+<div style={{ padding: "20px 30px" }}>
+  <Link
+    href="/products"
+    style={{
+      color: "#ffffff",
+      textDecoration: "none",
+      textTransform: "uppercase",
+      letterSpacing: "0.15em",
+      fontSize: "12px",
+      fontWeight: 600,
+    }}
+  >
+    ← Back to Products
+  </Link>
+</div>
+
+
       {/* HERO */}
 
       <section className="hero-band">

@@ -23,13 +23,11 @@ export default function PremiumLoader() {
         duration: 1.8,
         ease: "power2.out",
       }
-    )
-      .to({}, { duration: 1.0 })
-      .to(loaderRef.current, {
-        yPercent: -100,
-        duration: 0.6,
-        ease: "power3.inOut",
-      });
+    ).to(loaderRef.current, {
+      yPercent: -100,
+      duration: 0.6,
+      ease: "power3.inOut",
+    });
   }, []);
 
   return (
