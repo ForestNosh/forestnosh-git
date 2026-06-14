@@ -1,0 +1,293 @@
+
+<style>
+  :root {
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f8f6f2;
+
+  --color-text-primary: #1f1f1f;
+  --color-text-secondary: #6b6b6b;
+
+  --color-border-tertiary: #e5e0d8;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;}
+.wrap{font-family:'Jost',sans-serif;color:var(--color-text-primary);background:transparent;}
+
+.hero-band{background:#1a1208;border-radius:16px;padding:0;overflow:hidden;margin-bottom:0;position:relative;}
+.hero-inner{padding:3.5rem 3rem 2.5rem;}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:2.5rem;}
+.brand-block{}
+.brand-name{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:500;letter-spacing:0.08em;color:#f5ede0;line-height:1;margin-bottom:5px;}
+.brand-tm{font-size:0.65rem;vertical-align:super;letter-spacing:0;}
+.brand-line2{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#b8a88a;font-weight:400;line-height:1.6;margin-bottom:2px;}
+.brand-line2-accent{color:#d4aa6a;}
+.brand-line3{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#7a6d5e;font-weight:300;line-height:1.6;}
+.hero-badge-row{display:flex;gap:8px;}
+.hero-badge{font-size:10px;letter-spacing:0.1em;font-weight:400;padding:4px 12px;border:0.5px solid rgba(184,168,138,0.35);border-radius:20px;color:#b8a88a;}
+.hero-headline{font-family:'Cormorant Garamond',serif;font-size:3.8rem;font-weight:300;line-height:1.08;color:#f5ede0;margin-bottom:1rem;letter-spacing:-0.01em;}
+.hero-headline em{font-style:italic;color:#d4aa6a;}
+.hero-sub{font-size:13px;font-weight:300;color:#8a7a65;line-height:1.8;max-width:380px;letter-spacing:0.02em;}
+.hero-rule{height:0.5px;background:rgba(184,168,138,0.2);margin:2rem 0;}
+.hero-pills{display:flex;gap:10px;flex-wrap:wrap;}
+.hero-pill{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#b8a88a;font-weight:400;}
+.hero-pill::before{content:'—';margin-right:6px;color:#5a4f3f;}
+
+.ornament-strip{background:#0e0b05;padding:1.25rem 3rem;display:flex;justify-content:space-between;align-items:center;}
+.orn-stat{text-align:center;}
+.orn-num{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:#d4aa6a;display:block;line-height:1;}
+.orn-label{font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#5a4f3f;margin-top:3px;font-weight:400;}
+.orn-div{width:0.5px;height:36px;background:rgba(184,168,138,0.15);}
+
+.content-section{padding:2.5rem 0;}
+.section-eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:2rem;}
+.eyebrow-line{flex:1;height:0.5px;background:var(--color-border-tertiary);}
+.eyebrow-text{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--color-text-secondary);font-weight:400;white-space:nowrap;}
+
+.benefit-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--color-border-tertiary);border-radius:12px;overflow:hidden;margin-bottom:2rem;}
+.bblock{background:var(--color-background-primary);padding:1.5rem 1.25rem;}
+.bblock-icon{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:16px;}
+.bblock-icon-gold{background:#faeeda;color:#633806;}
+.bblock-icon-green{background:#eaf3de;color:#27500a;}
+.bblock-icon-purple{background:#eeedfe;color:#3c3489;}
+.bblock-icon-blue{background:#e6f1fb;color:#0c447c;}
+.bblock-title{font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:5px;}
+.bblock-desc{font-size:11px;color:var(--color-text-secondary);line-height:1.65;font-weight:300;}
+
+.ing-showcase{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:2rem;}
+.ing-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;overflow:hidden;}
+.ing-card-header{padding:1rem 1.25rem 0.75rem;border-bottom:0.5px solid var(--color-border-tertiary);}
+.ing-card-cat{font-size:10px;letter-spacing:0.15em;text-transform:uppercase;font-weight:400;margin-bottom:0.5rem;}
+.cat-meat{color:#712b13;}
+.cat-joint{color:#633806;}
+.cat-digest{color:#3c3489;}
+.cat-texture{color:#0c447c;}
+.ing-card-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;color:var(--color-text-primary);line-height:1.2;}
+.ing-card-body{padding:1rem 1.25rem;}
+.ing-item{display:flex;align-items:flex-start;gap:10px;padding:6px 0;border-bottom:0.5px solid var(--color-border-tertiary);}
+.ing-item:last-child{border-bottom:none;}
+.ing-dot{width:5px;height:5px;border-radius:50%;margin-top:5px;flex-shrink:0;}
+.dot-meat{background:#D85A30;}
+.dot-joint{background:#BA7517;}
+.dot-digest{background:#7F77DD;}
+.dot-texture{background:#378ADD;}
+.ing-name{font-size:12px;color:var(--color-text-primary);font-weight:400;flex:1;}
+.ing-note{font-size:11px;color:var(--color-text-secondary);font-weight:300;line-height:1.4;}
+
+.ayurveda-panel{background:#1a1208;border-radius:12px;padding:2rem 2.25rem;margin-bottom:2rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;}
+.ay-kicker{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#b8a88a;margin-bottom:0.75rem;font-weight:400;}
+.ay-title{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:#f5ede0;line-height:1.2;margin-bottom:1rem;}
+.ay-title em{font-style:italic;color:#d4aa6a;}
+.ay-body{font-size:12px;color:#8a7a65;line-height:1.9;font-weight:300;}
+.ay-right{display:flex;flex-direction:column;gap:10px;}
+.herb-row{border-top:0.5px solid rgba(184,168,138,0.15);padding-top:10px;}
+.herb-row:first-child{border-top:none;padding-top:0;}
+.herb-name{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;color:#d4aa6a;margin-bottom:2px;}
+.herb-aka{font-size:10px;letter-spacing:0.08em;color:#5a4f3f;font-weight:400;}
+.herb-benefit{font-size:11px;color:#8a7a65;margin-top:3px;line-height:1.5;font-weight:300;}
+
+.provenance-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:2rem;}
+.prov-card{background:var(--color-background-secondary);border-radius:12px;padding:1.25rem;text-align:center;}
+.prov-icon{font-size:22px;color:var(--color-text-secondary);margin-bottom:8px;}
+.prov-title{font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:4px;}
+.prov-sub{font-size:11px;color:var(--color-text-secondary);line-height:1.55;font-weight:300;}
+
+.cta-section{background:#1a1208;border-radius:12px;padding:2rem 2.25rem;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;}
+.cta-left-title{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:#f5ede0;margin-bottom:0.35rem;}
+.cta-left-sub{font-size:12px;color:#5a4f3f;font-weight:300;}
+.cta-buttons{display:flex;gap:10px;flex-shrink:0;}
+.btn-gold{background:#d4aa6a;color:#1a1208;border:none;padding:0.75rem 1.5rem;border-radius:8px;font-size:12px;letter-spacing:0.08em;font-weight:500;cursor:pointer;font-family:'Jost',sans-serif;}
+.btn-ghost{background:transparent;color:#b8a88a;border:0.5px solid rgba(184,168,138,0.35);padding:0.75rem 1.5rem;border-radius:8px;font-size:12px;letter-spacing:0.08em;font-weight:400;cursor:pointer;font-family:'Jost',sans-serif;}
+@media(max-width:540px){
+  .hero-headline{font-size:2.4rem;}
+  .benefit-row{grid-template-columns:1fr 1fr;}
+  .ing-showcase{grid-template-columns:1fr;}
+  .ayurveda-panel{grid-template-columns:1fr;}
+  .provenance-bar{grid-template-columns:1fr;}
+  .cta-section{flex-direction:column;align-items:flex-start;}
+}
+</style>
+
+<div class="wrap">
+<h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Forest Nosh premium functional treat product page — Bones and Joint Support.</h2>
+
+<div class="hero-band">
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div class="brand-block">
+        <p class="brand-name">FOREST NOSH<span class="brand-tm">™</span></p>
+        <p class="brand-line2"><span class="brand-line2-accent">Bones &amp; Joint Support</span></p>
+        <p class="brand-line3">Premium Functional Treat</p>
+      </div>
+      <div class="hero-badge-row">
+        <span class="hero-badge">Grain-free</span>
+        <span class="hero-badge">Ayurvedic</span>
+        <span class="hero-badge">No additives</span>
+      </div>
+    </div>
+    <h1 class="hero-headline">Nourishment<br><em>from source.</em><br>Strength for life.</h1>
+    <p class="hero-sub">Real dehydrated meats. Ancient Ayurvedic herbs. A treat your dog can taste — and a formula their joints will thank you for.</p>
+    <div class="hero-rule"></div>
+    <div class="hero-pills">
+      <span class="hero-pill">Dehydrated chicken breast</span>
+      <span class="hero-pill">Mutton liver</span>
+      <span class="hero-pill">Hadjod</span>
+      <span class="hero-pill">Shallaki</span>
+      <span class="hero-pill">14 ingredients total</span>
+    </div>
+  </div>
+  <div class="ornament-strip">
+    <div class="orn-stat"><span class="orn-num">2</span><span class="orn-label">real meats</span></div>
+    <div class="orn-div"></div>
+    <div class="orn-stat"><span class="orn-num">3</span><span class="orn-label">Ayurvedic herbs</span></div>
+    <div class="orn-div"></div>
+    <div class="orn-stat"><span class="orn-num">14</span><span class="orn-label">ingredients</span></div>
+    <div class="orn-div"></div>
+    <div class="orn-stat"><span class="orn-num">0</span><span class="orn-label">synthetics</span></div>
+  </div>
+</div>
+
+<div class="content-section">
+  <div class="section-eyebrow">
+    <div class="eyebrow-line"></div>
+    <span class="eyebrow-text">What it does</span>
+    <div class="eyebrow-line"></div>
+  </div>
+  <div class="benefit-row">
+    <div class="bblock">
+      <div class="bblock-icon bblock-icon-gold" aria-hidden="true"><i class="ti ti-bolt"></i></div>
+      <p class="bblock-title">High protein</p>
+      <p class="bblock-desc">Chicken breast and mutton liver deliver complete amino acid profiles for muscle maintenance.</p>
+    </div>
+    <div class="bblock">
+      <div class="bblock-icon bblock-icon-green" aria-hidden="true"><i class="ti ti-activity"></i></div>
+      <p class="bblock-title">Joint mobility</p>
+      <p class="bblock-desc">Hadjod, Shallaki, and turmeric — a trio backed by veterinary research for cartilage health.</p>
+    </div>
+    <div class="bblock">
+      <div class="bblock-icon bblock-icon-purple" aria-hidden="true"><i class="ti ti-leaf"></i></div>
+      <p class="bblock-title">Gut comfort</p>
+      <p class="bblock-desc">Psyllium husk and gentle grain-free starches support digestive regularity without bloat.</p>
+    </div>
+    <div class="bblock">
+      <div class="bblock-icon bblock-icon-blue" aria-hidden="true"><i class="ti ti-droplet"></i></div>
+      <p class="bblock-title">Natural cohesion</p>
+      <p class="bblock-desc">Gelatin, lecithin, and glycerine hold the treat together — no synthetic binders needed.</p>
+    </div>
+  </div>
+
+  <div class="section-eyebrow">
+    <div class="eyebrow-line"></div>
+    <span class="eyebrow-text">Ingredient breakdown</span>
+    <div class="eyebrow-line"></div>
+  </div>
+
+  <div class="ing-showcase">
+    <div class="ing-card">
+      <div class="ing-card-header">
+        <p class="ing-card-cat cat-meat">Protein sources</p>
+        <p class="ing-card-title">Real meat,<br>nothing rendered</p>
+      </div>
+      <div class="ing-card-body">
+        <div class="ing-item"><div class="ing-dot dot-meat"></div><div><div class="ing-name">Dehydrated Chicken Breast Powder</div><div class="ing-note">Primary protein — lean, highly digestible, palatable</div></div></div>
+        <div class="ing-item"><div class="ing-dot dot-meat"></div><div><div class="ing-name">Dehydrated Mutton Liver Powder</div><div class="ing-note">Organ protein — rich in B12, iron, and natural flavour</div></div></div>
+        <div class="ing-item"><div class="ing-dot dot-meat"></div><div><div class="ing-name">Whole Egg Powder</div><div class="ing-note">Complete amino acids + natural emulsification</div></div></div>
+      </div>
+    </div>
+    <div class="ing-card">
+      <div class="ing-card-header">
+        <p class="ing-card-cat cat-joint">Joint &amp; mobility</p>
+        <p class="ing-card-title">Ancient herbs,<br>modern validation</p>
+      </div>
+      <div class="ing-card-body">
+        <div class="ing-item"><div class="ing-dot dot-joint"></div><div><div class="ing-name">Hadjod Powder</div><div class="ing-note">Cissus quadrangularis — bone &amp; joint regeneration</div></div></div>
+        <div class="ing-item"><div class="ing-dot dot-joint"></div><div><div class="ing-name">Shallaki Powder</div><div class="ing-note">Boswellia serrata — cartilage &amp; inflammation support</div></div></div>
+        <div class="ing-item"><div class="ing-dot dot-joint"></div><div><div class="ing-name">Turmeric Powder</div><div class="ing-note">Curcumin — natural anti-inflammatory</div></div></div>
+        <div class="ing-item"><div class="ing-dot dot-joint"></div><div><div class="ing-name">Black Pepper Powder</div><div class="ing-note">Piperine — boosts absorption of all three herbs above</div></div></div>
+      </div>
+    </div>
+    <div class="ing-card">
+      <div class="ing-card-header">
+        <p class="ing-card-cat cat-digest">Digestion &amp; fibre</p>
+        <p class="ing-card-title">Gentle starches,<br>grain-free</p>
+      </div>
+      <div class="ing-card-body">
+        <div class="ing-item"><div class="ing-dot dot-digest"></div><div><div class="ing-name">Psyllium Husk Powder</div><div class="ing-note">Soluble fibre for gut regularity and stool formation</div></div></div>
+        <div class="ing-item"><div class="ing-dot dot-digest"></div><div><div class="ing-name">Tapioca Starch</div><div class="ing-note">Gentle grain-free carbohydrate and binder</div></div></div>
+        <div class="ing-item"><div class="ing-dot dot-digest"></div><div><div class="ing-name">Sweet Potato Flour</div><div class="ing-note">Natural beta-carotene and dietary fibre source</div></div></div>
+      </div>
+    </div>
+    <div class="ing-card">
+      <div class="ing-card-header">
+        <p class="ing-card-cat cat-texture">Texture &amp; cohesion</p>
+        <p class="ing-card-title">What holds it<br>all together</p>
+      </div>
+      <div class="ing-card-body">
+        <div class="ing-item"><div class="ing-dot dot-texture"></div><div><div class="ing-name">Gelatin</div><div class="ing-note">Natural binder — also a source of collagen peptides</div></div></div>
+        <div class="ing-item"><div class="ing-dot dot-texture"></div><div><div class="ing-name">Vegetable Glycerine</div><div class="ing-note">Keeps the treat moist and palatable</div></div></div>
+        <div class="ing-item"><div class="ing-dot dot-texture"></div><div><div class="ing-name">Soy Lecithin</div><div class="ing-note">Natural emulsifier for even ingredient distribution</div></div></div>
+        <div class="ing-item"><div class="ing-dot dot-texture"></div><div><div class="ing-name">Sunflower Oil</div><div class="ing-note">Omega-6 fatty acids for skin and coat health</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ayurveda-panel">
+    <div class="ay-left">
+      <p class="ay-kicker">The Ayurvedic difference</p>
+      <h2 class="ay-title">Herbs that have<br><em>earned their place</em></h2>
+      <p class="ay-body">Hadjod and Shallaki have been used in veterinary Ayurveda for centuries — and are now supported by peer-reviewed studies for joint and cartilage health in dogs. Black pepper's piperine isn't just a flavouring: it inhibits glucuronidation, meaning your dog actually absorbs the curcumin and boswellic acids rather than excreting them.</p>
+    </div>
+    <div class="ay-right">
+      <div class="herb-row">
+        <p class="herb-name">Hadjod</p>
+        <p class="herb-aka">Cissus quadrangularis · Bone setter</p>
+        <p class="herb-benefit">Stimulates osteoblast activity; supports bone density and fracture healing.</p>
+      </div>
+      <div class="herb-row">
+        <p class="herb-name">Shallaki</p>
+        <p class="herb-aka">Boswellia serrata · Indian frankincense</p>
+        <p class="herb-benefit">Boswellic acids inhibit inflammatory enzymes that degrade cartilage.</p>
+      </div>
+      <div class="herb-row">
+        <p class="herb-name">Turmeric + Black Pepper</p>
+        <p class="herb-aka">Curcuma longa + Piper nigrum · The bioavailability pair</p>
+        <p class="herb-benefit">Piperine increases curcumin absorption by up to 20× in clinical studies.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-eyebrow">
+    <div class="eyebrow-line"></div>
+    <span class="eyebrow-text">Our promise</span>
+    <div class="eyebrow-line"></div>
+  </div>
+
+  <div class="provenance-bar">
+    <div class="prov-card">
+      <div class="prov-icon" aria-hidden="true"><i class="ti ti-certificate"></i></div>
+      <p class="prov-title">No fillers, ever</p>
+      <p class="prov-sub">Every ingredient has a functional role. No wheat, maize, artificial colours, or synthetic preservatives.</p>
+    </div>
+    <div class="prov-card">
+      <div class="prov-icon" aria-hidden="true"><i class="ti ti-heart"></i></div>
+      <p class="prov-title">Formulated for longevity</p>
+      <p class="prov-sub">Designed for dogs 3 years and above. Daily use supports joint health before symptoms appear.</p>
+    </div>
+    <div class="prov-card">
+      <div class="prov-icon" aria-hidden="true"><i class="ti ti-microscope"></i></div>
+      <p class="prov-title">Science-backed herbs</p>
+      <p class="prov-sub">Hadjod and Shallaki dosages aligned with peer-reviewed veterinary research, not tradition alone.</p>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <div>
+      <p class="cta-left-title">Ready to learn more?</p>
+      <p class="cta-left-sub">Ask about feeding guides, breed suitability, or the science behind the herbs.</p>
+    </div>
+    <div class="cta-buttons">
+      <button class="btn-gold" onclick="sendPrompt('What is the recommended daily serving for Forest Nosh treats by dog size and weight?')">Feeding guide ↗</button>
+      <button class="btn-ghost" onclick="sendPrompt('Tell me the clinical evidence behind Hadjod and Shallaki for dogs')">Herb science ↗</button>
+    </div>
+  </div>
+</div>
+</div>
