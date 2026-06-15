@@ -1,8 +1,13 @@
 import Link from "next/link";
 
+
 export default function ProductSection() {
   return (
-<div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center max-w-6xl mx-auto -mt-29">
+    <>
+
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center max-w-6xl mx-auto ">
+  
 
       {/* Bones & Joint Support */}
       <div className="text-center transition-all duration-500">
@@ -127,6 +132,8 @@ export default function ProductSection() {
         </Link>
       </div>
 
-    </div>
+        </div>
+
+    </>
   );
 }

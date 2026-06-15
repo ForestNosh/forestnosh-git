@@ -1,51 +1,27 @@
 import Link from "next/link";
+import ProductSection from "../components/ProductSection";
 
 export default function ProductsPage() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-12">
+    <main className="bg-black text-white min-h-screen">
 
-      <div style={{ paddingBottom: "20px" }}>
+      <div className="max-w-7xl mx-auto px-6 py-12">
+
         <Link
-          href="/products"
-          style={{
-            color: "#ffffff",
-            textDecoration: "none",
-            textTransform: "uppercase",
-            letterSpacing: "0.15em",
-            fontSize: "12px",
-            fontWeight: 600,
-          }}
+          href="/"
+          className="uppercase tracking-[0.15em] text-xs text-white/70 hover:text-white"
         >
-          ← Back to Products
+          ← Back Home
         </Link>
+
+        <h1 className="text-4xl md:text-5xl mt-8 mb-20 font-light">
+          Forest Nosh Products
+        </h1>
+
+ <ProductSection />
+
       </div>
 
-      <h1 className="text-4xl font-bold mb-10">
-        Forest Nosh Products
-      </h1>
-
-      <div className="grid md:grid-cols-2 gap-8">
-
-        <div className="border rounded-xl p-6">
-          <h2 className="text-2xl font-semibold mb-3">
-            Bones & Joint Support Soft Chews
-          </h2>
-
-          <Link href="/products/bones-joint-support">
-            View Product →
-          </Link>
-        </div>
-
-        <div className="border rounded-xl p-6">
-          <h2 className="text-2xl font-semibold mb-3">
-            Female Dog Wellness
-          </h2>
-
-          <Link href="/products/female-dog-wellness">
-            View Product →
-          </Link>
-        </div>
-      </div>
     </main>
   );
 }
