@@ -54,7 +54,7 @@ export default function ProductSection() {
             </h3>
 
             <p className="text-xs tracking-[0.2em] uppercase text-white/60">
-              COMING SOON →
+              COMING SOON IN A→
             </p>
 
           </div>
@@ -124,7 +124,7 @@ export default function ProductSection() {
             </h3>
 
             <p className="text-xs tracking-[0.2em] uppercase text-white/60">
-              COMING SOON →
+              COMING SOON IN AMAZON→
             </p>
 
           </div>
