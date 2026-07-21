@@ -50,7 +50,7 @@ export default function ProductSection() {
             </div>
 
             <h3 className="text-lg tracking-[0.15em] uppercase text-white/90 mb-3">
-              Bones & Joint Support
+              Human Bones & Joint Support Biscuit
             </h3>
 
             <p className="text-xs tracking-[0.2em] uppercase text-white/60">
@@ -74,7 +74,7 @@ export default function ProductSection() {
         </div>
 
         <p className="mt-4 text-white/70 tracking-[0.2em] uppercase text-xs">
-          Premium Nutrition For Dogs
+          Premium Nutrition For Human
         </p>
 
       </div>
@@ -120,7 +120,7 @@ export default function ProductSection() {
             </div>
 
             <h3 className="text-lg tracking-[0.15em] uppercase text-white/90 mb-3">
-              Female Dog Wellness
+              Female Wellness Biscuit
             </h3>
 
             <p className="text-xs tracking-[0.2em] uppercase text-white/60">
