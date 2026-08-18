@@ -57,7 +57,7 @@ export default function PremiumLoader() {
             font-extrabold
           "
         >
-          Premium Nutrition For Human
+          Premium Nutrition For Dog
         </p>
       </div>
     </div>
